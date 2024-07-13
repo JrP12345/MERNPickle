@@ -1,0 +1,92 @@
+/* styles/Item.css */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.itemcontainer {
+  width: 100%;
+  max-width: 210px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideInUp 0.5s ease forwards;
+}
+
+@keyframes slideInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.itemcontainer:hover {
+  transform: scale(1.05);
+}
+
+.itemimagecontainer {
+  height: 200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.productimg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.itemtitlecontainer,
+.pricecontainer,
+.cartbtncontainer {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5px 0px;
+}
+
+.prdttxt {
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap; /* Ensure the text is displayed in one line only */
+  overflow: hidden; /* Hide any text that overflows the container */
+  text-overflow: ellipsis; /* Display "..." for truncated text */
+}
+
+.prdtadcartbtn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.prdtadcartbtn:hover {
+  background-color: black;
+  color: white;
+}
+@media (max-width: 1215px) {
+  .itemcontainer {
+    max-width: 190px;
+  }
+}
+
+
+@media (max-width: 460px) {
+  .itemcontainer {
+    max-width: 150px;
+  }
+  .itemimagecontainer{
+    height: 150px;
+  }
+}

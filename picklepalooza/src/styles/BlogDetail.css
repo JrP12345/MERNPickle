@@ -1,0 +1,51 @@
+.blogtitledetail{
+    font-size: 40px;
+    margin-top: 20px;
+}
+.blogconatinermain{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.mainblogdetailcon{
+    /* background-color: rgb(74, 111, 143); */
+    width: 1000px;
+    padding: 10px;
+}
+.blogauthdateconatiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blue; */
+    margin-top: 10px;
+}
+.blogtxtdateauth{
+    font-size: 15px;
+    color: gray;
+    font-weight: 400;
+}
+.blogdetailimagecontainer {
+    background-color: aqua; /* Example background color */
+    width: 100%;
+    text-align: center; /* Optional: Center align the image within its container */
+  }
+  
+  .blogimagedetail {
+    width: 100%; /* Fixed width */
+    max-height:600px ;
+    height: auto; /* Fixed height */
+    object-fit:fill; /* Ensures the image covers the entire container */
+    display: block; /* Remove extra space below image */
+    margin: 0 auto; /* Center align the image horizontally */
+    margin-top: 15px;
+  }
+  .descriptionblog{
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .descblogtxt{
+    font-size: 18px;
+    font-weight: 400;
+  }

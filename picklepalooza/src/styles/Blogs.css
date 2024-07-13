@@ -1,0 +1,87 @@
+.blogitemcontainer {
+    height:fit-content;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  }
+  .blogitemcontainer:hover{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background-color: rgb(251, 250, 250);
+  }
+  
+  .blogimagecontainer {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .blogimage {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+  }
+  
+  .detailblogcon {
+    padding: 10px;
+  }
+  
+  .blogtitlecontainer,
+  .blogdesccontainer {
+    width: 100%;
+    height: auto; /* You can adjust this as needed */
+    margin: 5px 0;
+    /* background-color: blue; */
+  }
+  
+  .blogtitle {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .blogdesc {
+    overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show before truncation */
+  -webkit-box-orient: vertical;
+  /* Optional: Adjust these values as needed for better appearance */
+  max-height: 3.6em; /* Adjust based on line height and font size */
+  line-height: 1.2em; /* Ensure consistent line height */
+  }
+  
+  .blogreadbtn {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .blogreadbtn:hover {
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+  }
+  
+  .blogreadbtncontainer {
+    width: 100%;
+  }
+  .blog-upload-detail-container-blog {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+  }
+  .namedatetxtblog{
+    font-weight: 500;
+    font-size: 12px;
+  }
+  @media screen and (max-width: 1000px) {
+    .blogitemcontainer {
+        height:fit-content; /* Adjust container width for screens up to 1000px */
+    }
+}

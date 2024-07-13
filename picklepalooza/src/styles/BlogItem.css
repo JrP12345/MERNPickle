@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.blog-container {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .blog-image {
+    position: relative;
+    width: 300px; /* Adjust this according to your design */
+    height: 300px;
+    overflow: hidden; /* Ensure the overlay doesn't extend beyond the container */
+  }
+  
+  .blog-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .blog-title-overlay {
+    position: absolute;
+    bottom: -35px; /* Initially hide the overlay below the container */
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.872) 100%);
+    padding: 10px;
+    box-sizing: border-box;
+    transition: bottom 0.3s ease; /* Apply transition for smooth animation */
+  }
+  
+  .blog-container:hover .blog-title-overlay {
+    bottom: 0; /* Show the overlay on hover */
+  }
+  
+  .blog-title {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .blog-upload-detail-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .blog-writer-img {
+    width: 40px;
+    display: flex;
+  }
+  
+  .writer-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    margin-right: 10px;
+  }
+  
+  .namedatetxt {
+    font-weight: 300;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .authortxtblog{
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .blog-writer-name-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  

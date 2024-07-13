@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.logo-img {
+  max-height: 60px; /* Set the maximum width of the image */
+  height: auto; /* Ensure aspect ratio is maintained */
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  background-color: white;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  width: 100%;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+}
+.nav-container {
+  display: flex;
+  /* background-color: bisque; */
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-container > * {
+  margin: 0px 20px; /* Apply 20px margin to all children */
+}
+.nav-input {
+  background-color: rgba(243, 240, 246, 0.565);
+  padding: 11px;
+  border-radius: 5px 0px 0px 5px;
+  outline: none;
+  border: none;
+}
+.search-icon {
+  padding: 11px;
+  border: none;
+  background-color: rgb(223, 231, 223);
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+.search-icon:hover {
+  background-color: green;
+  color: white;
+}
+.nav-link {
+  text-decoration: none;
+  /* background-color: azure; */
+  padding: 15px;
+  font-size: 17px;
+  color: black;
+}
+.nav-link:hover {
+  color: green;
+}
+.likecartbtn {
+  /* background-color: brown; */
+  padding: 15px;
+  cursor: pointer;
+}
+.likecartbtn:hover {
+  color: green;
+}
+.likecart {
+  display: flex;
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+.logoutbtn{
+  padding: 10px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-size:15px;
+}
+.userlogout-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.usernamecon{
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+.cart-modal-container {
+  position: fixed; /* or absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  z-index: 1000; /* ensure it's on top */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal */
+.cart-modal {
+  width: 1000px; /* Specify fixed width */
+  height: 800px; /* Specify fixed height */
+
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Modal content */
+.cart-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
+   width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  max-height: 800px;
+  margin: 30px;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Close button */
+.close-btn {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cart-quantity-badge {
+  position: absolute;
+  top: -4px; /* Adjust this value to position the badge vertically */
+  right: -4px; /* Adjust this value to position the badge horizontally */
+  background-color: rgb(243, 72, 72);
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 10px;
+}
+.cart-container {
+  position: relative;
+}
+.close-btn:hover {
+  background-color: #e60000;
+}
+@media screen and (max-width: 1250px) {
+  .nav-container > * {
+    margin: 0px 5px; /* Apply 20px margin to all children */
+  }
+}
+@media screen and (max-width: 1130px) {
+  .menu-icon {
+    display: flex;
+    padding: 10px;
+  }
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+  }
+  .logo-img {
+    display: none;
+  }
+  .navbar {
+    height: auto;
+  }
+  .nav-search-container {
+    display: none;
+  }
+  .nav-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-container.hidden {
+    display: none;
+  }
+  .nav-reglog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

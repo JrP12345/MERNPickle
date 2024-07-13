@@ -1,0 +1,41 @@
+.formadrrrescon{
+    /* background-color: aqua; */
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.firsthalfaddresform{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+   
+}
+.fieldaddresbuy{
+    width: 100%; 
+    padding: 10px;
+    margin: 5px;
+}
+.saveaddressbtn{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: rgb(17, 184, 45);
+    color: white;
+    
+}
+.saveaddressbtn:hover{
+   background-color: green;
+   cursor: pointer;
+    
+}
+.titlenewadrress{
+    text-align: center;
+    padding: 10px;
+}
+@media screen and (max-width :840px) {
+    .firsthalfaddresform{
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+}

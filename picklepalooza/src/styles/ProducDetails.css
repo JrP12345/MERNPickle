@@ -1,0 +1,195 @@
+.detailpageproductcontainer {
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailcontainer {
+  /* background-color: rgb(62, 71, 68); */
+  max-width: 900px; /* Adjust according to your requirement */
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.topcontainer {
+  display: flex;
+}
+.leftcontainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+  width: 400px;
+  height: 400px;
+}
+
+.imagecontaierdeatil {
+  width: 100%;
+  height: 100%;
+  /* background-color: blue; */
+}
+
+.detailimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.namedetailcon {
+  /* background-color: aqua; */
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.descdeatiltxt {
+  /* background-color: aquamarine; */
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.weightdetailcon {
+  /* background-color: aqua; */
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.smalldtl {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.pricedetailcon {
+  /* background-color: rgb(128, 187, 187); */
+  font-size: 25px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+.addbuyquanitycon {
+  display: flex;
+  background-color: aqua;
+}
+.quanitycondetailproduct {
+  display: flex;
+}
+.quntotalprice {
+  display: flex;
+  /* background-color: antiquewhite; */
+  align-items: center;
+  justify-content: space-between;
+}
+.quanitycondetailproduct {
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+}
+.qanupdown,
+.quantityproduct {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.addbuybtncon {
+  display: flex;
+  flex-direction: column;
+}
+
+.addprdtbtn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+}
+.butprdtbtn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+
+}
+.addprdtbtn:hover,.butprdtbtn:hover{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transition: .2s;
+}
+.rightdeatilproductconatiner {
+  /* background-color: brown; */
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.btndtltxt{
+  margin-top: 20px;
+}
+.reviewtitlesection{
+  background-color:rgb(0, 0, 0) ;
+  padding: 15px;
+  margin: 10px 0px;
+}
+.reviewtitle{
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+.topcontainer{
+  /* background-color: aqua; */
+}
+.reviewsection{
+  /* background-color: aqua; */
+  
+}
+.reviewuserbtn{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+.reviewuserbtn:hover{
+  background-color: rgb(160, 158, 158);
+  color: rgb(0, 0, 0);
+
+}
+.relatedproductcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  box-sizing: border-box;
+  /* background-color: aqua; */
+
+}
+@media screen and (max-width: 900px) {
+  .topcontainer {
+    flex-direction: column;
+  }
+  .leftcontainer {
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+  }
+  .rightdeatilproductconatiner {
+    margin-left: 0px;
+  }
+  .btndeatilproductcon{
+    padding: 10px;
+  }
+  .reviewtitlesection{
+    background-color: white;
+   }
+   .reviewtitle{
+    color: black;
+   }
+   .reviewsection{
+    margin-left: 10px;
+    
+  }
+}

@@ -1,0 +1,137 @@
+.outercontainerbuynow{
+     /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.mainbuynowcontainer{
+   /* background-color: rgb(176, 176, 181); */
+    width: 800px;
+    padding: 10px;
+    height: max-content;
+}
+.flexbuyconmain{
+display: flex;
+}
+.buynowtitletxt{
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+/* addres starts */
+.addressbuytxttitle{
+    background-color: rgb(170, 169, 169);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+.addressitembuycon{
+    /* background-color: aqua; */
+    padding: 10px;
+    margin: 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.addresfirstcon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.addrestxt{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 5px 0px;
+}
+.addnewaddresbtn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.addnewaddresbtn:hover{
+    background-color: rgb(179, 179, 179);
+    color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.radiotxtpay{
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* payment */
+.payemtradiocon{
+    display: flex;
+    margin: 10px;
+}
+
+/* confirmorder */
+
+.ordersummarycon{
+/* background-color: aqua; */
+/* padding: 10px; */
+}
+.orderitembuycon{
+    display: flex;
+    align-items:center ;
+    /* background-color: blue; */
+    margin: 10px 0px;
+}
+.imageconbuyorder{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    object-fit: fill;
+
+}
+.orderconfirmimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.secondhalfordercon{
+    /* background-color: blue; */
+    margin-left: 10px;
+}
+.ordercontxt{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px;
+}
+.removeordercon{
+    background-color: red;
+    border: none;
+    padding: 5px;
+    width: 100%;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1130px) {
+    .flexbuyconmain{
+        display: block;
+    }
+    .mainbuynowcontainer{
+        width:800px;
+     }
+  }
+  @media screen and (max-width: 850px) {
+    .mainbuynowcontainer{
+        width:600px;
+     }
+  }
+  @media screen and (max-width: 640px) {
+    .mainbuynowcontainer{
+        width:400px;
+     }
+  }
+  @media screen and (max-width: 440px) {
+    .mainbuynowcontainer{
+        width:350px;
+     }
+  }

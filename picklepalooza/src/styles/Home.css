@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+.custom-link{
+    text-decoration: none;
+    color: black;
+}
+.Homecontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+    display: none;
+}
+
+
+.trendingcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 1400px;
+    /* background-color: aqua; */
+}
+
+@media screen and (max-width: 1400px) {
+    .trendingcontainer {
+        width: 1200px; /* Adjust container width for screens up to 1400px */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .trendingcontainer {
+        width: 1000px; /* Adjust container width for screens up to 1200px */
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .trendingcontainer {
+        width: 800px; /* Adjust container width for screens up to 1000px */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .trendingcontainer {
+        width: 100%; /* Full width for smaller screens */
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+
+.trendingcontainer > * {
+    margin-bottom: 20px; /* Add bottom margin to adjust the space between rows */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+.trendingtitle{
+    font-family: "Bonheur Royale", cursive; 
+    /* background-color: rgb(233, 233, 233); */
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 10px;
+    font-family: "Bonheur Royale", cursive;
+}
+.explorebtn{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.explbtn{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
