@@ -22,7 +22,7 @@ app.use(cors({ origin: true, credentials: true })); // Allow requests from all o
 app.use(express.json())
 app.use(cookieParser(process.env.SECRET_CODE,{
     sameSite:"none",
-    secure:true
+ 
 }))
 // Multer configuration
 const storage = multer.diskStorage({
