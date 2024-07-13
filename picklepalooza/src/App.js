@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useEffect, useState} from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
 import Register from "./components/Register";
@@ -15,8 +15,19 @@ import ProductBuy from "./utilities/ProductBuy";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    // Check localStorage for login status on initial load
+    const storedLoggedInStatus = localStorage.getItem("isLoggedIn");
+    if (storedLoggedInStatus) {
+      setIsLoggedIn(JSON.parse(storedLoggedInStatus));
+    }
+  }, []);
+
   const updateLoggedInState = (loggedIn) => {
     setIsLoggedIn(loggedIn);
+    // Store login status in localStorage
+    localStorage.setItem("isLoggedIn", loggedIn);
   };
   return (
     <Router>
