@@ -24,7 +24,7 @@ function BlogItem({ blog }) {
   return (
     <div className="blog-container">
       <div className="blog-image">
-      <img src={`http://localhost:4001/${blog.image}`} alt={blog.name} className="blogimage" />
+      <img src={`https://mernpickle-admin-backend.onrender.com/${blog.image}`} alt={blog.name} className="blogimage" />
         <div className="blog-title-overlay">
           <h3 className="blog-title">
           {truncateTitle(blog.title)}

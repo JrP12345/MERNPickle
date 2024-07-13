@@ -21,7 +21,7 @@ function Blogs({ blog }) {
   return (
     <div className="blogitemcontainer">
         <div className="blogimagecontainer">
-        <img src={`http://localhost:4001/${blog.image}`} alt={blog.name} className="blogimage" />
+        <img src={`https://mernpickle-admin-backend.onrender.com/${blog.image}`} alt={blog.name} className="blogimage" />
         </div>
         <div className="detailblogcon">
         <div className="blogtitlecontainer">

@@ -12,7 +12,7 @@ function Blog() {
     // Fetch all blogs
     async function fetchBlogs() {
       try {
-        const response = await fetch("http://localhost:4001/blog/list");
+        const response = await fetch("https://mernpickle-admin-backend.onrender.com/blog/list");
         if (!response.ok) {
           throw new Error("Failed to fetch blogs");
         }

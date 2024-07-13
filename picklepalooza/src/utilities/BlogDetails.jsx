@@ -11,7 +11,7 @@ function BlogDetails() {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch(`http://localhost:4001/blog/${blogId}`);
+        const response = await fetch(`https://mernpickle-admin-backend.onrender.com/blog/${blogId}`);
         if (!response.ok) {
           throw new Error("Network response was not ok.");
         }
@@ -40,7 +40,7 @@ function BlogDetails() {
     // Fetch all blogs
     async function fetchBlogs() {
       try {
-        const response = await fetch('http://localhost:4001/blog/list');
+        const response = await fetch('https://mernpickle-admin-backend.onrender.com/blog/list');
         if (!response.ok) {
           throw new Error('Failed to fetch blogs');
         }
@@ -60,7 +60,7 @@ function BlogDetails() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch("http://localhost:4001/blog/list");
+        const response = await fetch("https://mernpickle-admin-backend.onrender.com/blog/list");
         if (!response.ok) {
           throw new Error("Failed to fetch blogs");
         }
@@ -111,7 +111,7 @@ function BlogDetails() {
         </div>
         <div className="blogdetailimagecontainer">
           <img
-            src={`http://localhost:4001/${blog.image}`}
+            src={`https://mernpickle-admin-backend.onrender.com/${blog.image}`}
             alt={blog.name}
             className="blogimagedetail"
           />
