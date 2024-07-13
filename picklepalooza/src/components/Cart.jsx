@@ -13,7 +13,7 @@ const Cart = ({ onCloseModal }) => {
     const fetchCartItems = async () => {
       try {
         const token = localStorage.getItem('Token');
-        const response = await fetch('http://localhost:4000/cart/cartItems', {
+        const response = await fetch('https://mernpickle-backend.onrender.com/cart/cartItems', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ const Cart = ({ onCloseModal }) => {
   const fetchProduct = async (productId) => {
     try {
       const response = await fetch(
-        `http://localhost:4000/product/${productId}`
+        `https://mernpickle-backend.onrender.com/product/${productId}`
       );
       if (!response.ok) {
         throw new Error("Network response was not ok.");
@@ -97,7 +97,7 @@ const Cart = ({ onCloseModal }) => {
     setLoading(true);
     try {
       const token = localStorage.getItem('Token');
-      const response = await fetch('http://localhost:4000/cart/removeCart', {
+      const response = await fetch('https://mernpickle-backend.onrender.com/cart/removeCart', {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
@@ -125,7 +125,7 @@ const Cart = ({ onCloseModal }) => {
     setLoading(true);
     try {
       const token = localStorage.getItem('Token');
-      const response = await fetch('http://localhost:4000/cart/removeCartAll', {
+      const response = await fetch('https://mernpickle-backend.onrender.com/cart/removeCartAll', {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

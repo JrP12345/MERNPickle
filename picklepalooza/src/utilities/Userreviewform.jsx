@@ -16,7 +16,7 @@ const Userreviewform = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:4000/review/add', {
+      const response = await fetch('https://mernpickle-backend.onrender.com/review/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -37,7 +37,7 @@ const CartItem = ({ item, fetchProduct, removeFromCart }) => {
     setQuantity((prevQuantity) => prevQuantity + 1);
     try {
       const token = localStorage.getItem("Token");
-      const response = await fetch("http://localhost:4000/cart/cartAdd", {
+      const response = await fetch("https://mernpickle-backend.onrender.com/cart/cartAdd", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -65,7 +65,7 @@ const CartItem = ({ item, fetchProduct, removeFromCart }) => {
       try {
         const token = localStorage.getItem("Token");
         const response = await fetch(
-          "http://localhost:4000/cart/decrementCart",
+          "https://mernpickle-backend.onrender.com/cart/decrementCart",
           {
             method: "PUT",
             headers: {
@@ -89,7 +89,7 @@ const CartItem = ({ item, fetchProduct, removeFromCart }) => {
     <div className="cartitemcontainer">
       <div className="cartimagecontainer">
         <img
-          src={`http://localhost:4000/${product.image}`}
+          src={`https://mernpickle-backend.onrender.com/${product.image}`}
           alt={product.name}
           className="cartimage"
         />

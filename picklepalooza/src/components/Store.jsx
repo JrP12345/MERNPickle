@@ -19,7 +19,7 @@ function Store() {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const response = await fetch("http://localhost:4000/product/list");
+        const response = await fetch("https://mernpickle-backend.onrender.com/product/list");
         if (!response.ok) {
           throw new Error("Failed to fetch products");
         }

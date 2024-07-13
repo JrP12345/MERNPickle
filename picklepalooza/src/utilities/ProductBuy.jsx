@@ -21,7 +21,7 @@ function ProductBuy() {
   useEffect(() => {
     const fetchAddresses = async () => {
       try {
-        const response = await fetch("http://localhost:4000/address/list", {
+        const response = await fetch("https://mernpickle-backend.onrender.com/address/list", {
           method: "GET",
           credentials: "include", // Ensure cookies are sent with the request for authentication
         });
@@ -96,7 +96,7 @@ function ProductBuy() {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:4000/order/new", {
+      const response = await fetch("https://mernpickle-backend.onrender.com/order/new", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -133,7 +133,7 @@ function ProductBuy() {
     setLoading(true);
     try {
       const token = localStorage.getItem("Token");
-      const response = await fetch("http://localhost:4000/cart/removeCartAll", {
+      const response = await fetch("https://mernpickle-backend.onrender.com/cart/removeCartAll", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -231,7 +231,7 @@ function ProductBuy() {
                     <div key={product.productId} className="orderitembuycon">
                       <div className="imageconbuyorder">
                         <img
-                          src={`http://localhost:4000/${product.image}`}
+                          src={`https://mernpickle-backend.onrender.com/${product.image}`}
                           alt={product.name}
                           className="orderconfirmimg"
                         />

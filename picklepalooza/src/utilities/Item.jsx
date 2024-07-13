@@ -10,7 +10,7 @@ const Item = ({ product }) => {
     e.stopPropagation(); // Stop the event from propagating to parent elements
     try {
       const token = localStorage.getItem("Token");
-      const response = await fetch("http://localhost:4000/cart/cartAdd", {
+      const response = await fetch("https://mernpickle-backend.onrender.com/cart/cartAdd", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +40,7 @@ const Item = ({ product }) => {
     <div className="itemcontainer">
       <div className="itemimagecontainer">
         <img
-          src={`http://localhost:4000/${product.image}`}
+          src={`https://mernpickle-backend.onrender.com/${product.image}`}
           alt={product.name}
           className="productimg"
         />

@@ -51,7 +51,7 @@ function Navbar({ isLoggedIn, updateLoggedInState }) {
   };
   const handleLogout = async () => {
     try {
-      const response = await fetch("http://localhost:4000/user/logout", {
+      const response = await fetch("https://mernpickle-backend.onrender.com/user/logout", {
         method: "DELETE",
         credentials: "include", // Ensure credentials are sent with the request (cookies)
       });
@@ -74,7 +74,7 @@ function Navbar({ isLoggedIn, updateLoggedInState }) {
 
   const fetchUsername = async () => {
     try {
-      const response = await fetch("http://localhost:4000/user/userprofile", {
+      const response = await fetch("https://mernpickle-backend.onrender.com/user/userprofile", {
         method: "GET",
         credentials: "include",
       });
@@ -97,7 +97,7 @@ function Navbar({ isLoggedIn, updateLoggedInState }) {
   const fetchCartItemsCount = async () => {
     try {
       const token = localStorage.getItem("Token");
-      const response = await fetch("http://localhost:4000/cart/cartItems", {
+      const response = await fetch("https://mernpickle-backend.onrender.com/cart/cartItems", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

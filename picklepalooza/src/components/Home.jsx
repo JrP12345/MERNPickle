@@ -40,7 +40,7 @@ function Home() {
     // Fetch trending products (latest four products)
     async function fetchTrendingProducts() {
       try {
-        const response = await fetch('http://localhost:4000/product/list');
+        const response = await fetch('https://mernpickle-backend.onrender.com/product/list');
         if (!response.ok) {
           throw new Error('Failed to fetch products');
         }
@@ -57,7 +57,7 @@ function Home() {
     // Fetch unique products (random four products)
     async function fetchUniqueProducts() {
       try {
-        const response = await fetch('http://localhost:4000/product/list');
+        const response = await fetch('https://mernpickle-backend.onrender.com/product/list');
         if (!response.ok) {
           throw new Error('Failed to fetch products');
         }

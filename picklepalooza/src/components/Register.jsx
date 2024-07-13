@@ -16,7 +16,7 @@ function Register() {
     e.preventDefault();
   
     try {
-      const response = await fetch('http://localhost:4000/user/register', {
+      const response = await fetch('https://mernpickle-backend.onrender.com/user/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

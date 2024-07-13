@@ -19,7 +19,7 @@ function ProductDetail() {
     const fetchProduct = async () => {
       try {
         const response = await fetch(
-          `http://localhost:4000/product/${productId}`
+          `https://mernpickle-backend.onrender.com/product/${productId}`
         );
         if (!response.ok) {
           throw new Error("Network response was not ok.");
@@ -40,7 +40,7 @@ function ProductDetail() {
     const fetchReviews = async () => {
       try {
         const response = await fetch(
-          `http://localhost:4000/review/list/${productId}`,
+          `https://mernpickle-backend.onrender.com/review/list/${productId}`,
           {
             method: "GET",
             headers: {
@@ -70,7 +70,7 @@ function ProductDetail() {
     console.log("Adding to cart:", { productId, quantity });
     try {
       const token = localStorage.getItem("Token");
-      const response = await fetch("http://localhost:4000/cart/cartAdd", {
+      const response = await fetch("https://mernpickle-backend.onrender.com/cart/cartAdd", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -96,7 +96,7 @@ function ProductDetail() {
     // Fetch trending products (latest four products)
     async function fetchTrendingProducts() {
       try {
-        const response = await fetch("http://localhost:4000/product/list");
+        const response = await fetch("https://mernpickle-backend.onrender.com/product/list");
         if (!response.ok) {
           throw new Error("Failed to fetch products");
         }
@@ -155,7 +155,7 @@ function ProductDetail() {
             <div className="leftcontainer">
               <div className="imagecontaierdeatil">
                 <img
-                  src={`http://localhost:4000/${product.image}`}
+                  src={`https://mernpickle-backend.onrender.com/${product.image}`}
                   className="detailimg"
                   alt="Product"
                 />

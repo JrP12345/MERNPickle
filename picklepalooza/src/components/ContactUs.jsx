@@ -9,7 +9,7 @@ const ContactUs = () => {
     event.preventDefault();
     
     try {
-      const response = await fetch('http://localhost:4000/contact/new', {
+      const response = await fetch('https://mernpickle-backend.onrender.com/contact/new', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

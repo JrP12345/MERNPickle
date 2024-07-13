@@ -12,7 +12,7 @@ function AddressForm({onSuccess }) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch("http://localhost:4000/address/add", {
+      const response = await fetch("https://mernpickle-backend.onrender.com/address/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
