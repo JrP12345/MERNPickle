@@ -32,9 +32,13 @@ Set up environment variables:
    Create a .env file in the server directory and add necessary variables 
    (e.g., MongoDB URI,PORT,SECRET).
 Start the development servers:
-  ```bash
+ 
       For frontend: 
-         cd client && npm start
+       ```bash
+         cd client && npm start  
+
+   
       For backend: 
+       ```bash
          cd server && npm start
-  ```bash
+ 
