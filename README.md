@@ -29,11 +29,12 @@ To run this project locally, follow these steps:
    cd ..
    cd server && npm install
 Set up environment variables:
-   Create a .env file in the server directory and add necessary variables (e.g., MongoDB URI,PORT,SECRET).
+   Create a .env file in the server directory and add necessary variables 
+   (e.g., MongoDB URI,PORT,SECRET).
 Start the development servers:
+  ```bash
       For frontend: 
-      ```bash
          cd client && npm start
       For backend: 
-      ```bash
          cd server && npm start
+  ```bash
